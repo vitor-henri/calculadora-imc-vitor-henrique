@@ -1,0 +1,112 @@
+/* Dev by Vitor */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+/* Main */
+.calculator{
+    background-color: var(--fundo-principal);
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px 0px rgb(44, 44, 44);
+    position: absolute;
+    left: calc(50% - 25vw);
+    top: calc(50% - 20vh);
+}
+/* cabeçalho */
+.calculator__header{
+    width: 50%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator__title{
+    color: var(--titulo);
+}
+/* formulario */
+.calculator__form-section{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.calculator__form{
+    width: 100%;
+    height: 100%;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.calculator__form-group{
+    display: flex;
+    flex-direction: column;
+}
+/* inputs e botões */
+.calculator__input{
+    background-color: var(--fundo-dos-inputs);
+    border-color: var(--bordas-dos-inputs);
+}
+
+.calculator__button, .calculator__input{
+    border-radius: 5px;
+}
+.calculator__buttons{
+    display: flex;
+    gap: 10px;
+}
+.calculator__button{
+    width: 100px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.calculator__button--calculate{
+    background-color: var(--botao-calcular);
+}
+
+.calculator__button--calculate:hover{
+    transition: background 0.3s ease;
+    background-color: var(--botao-calcular-hover);
+}
+
+.calculator__button--clear{
+    background-color: var(--botao-limpar);
+}
+
+.calculator__button--clear:hover{
+    transition: background 0.3s ease;
+    background-color: var(--botao-limpar-hover);
+}
+/* resultado */
+.calculator__result-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calculator__result-text {
+    color: var(--texto-do-resultado);
+    font-weight: bold;
+    /* fazendo uma mini animação com o transition */
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+}

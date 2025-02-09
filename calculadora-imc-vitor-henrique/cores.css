@@ -1,0 +1,11 @@
+:root{
+    --fundo-principal: #FFD6A5;
+    --titulo: #D1495B;
+    --bordas-dos-inputs: #F77F00;
+    --fundo-dos-inputs: #FFE8CC;
+    --texto-do-resultado: #2D6A4F;
+    --botao-calcular: #FFB703;
+    --botao-calcular-hover: #F77F00;
+    --botao-limpar: #D62828;
+    --botao-limpar-hover: #9D0208;
+}
